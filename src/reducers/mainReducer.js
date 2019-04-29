@@ -3,16 +3,17 @@ let initState={
 } 
 
 const mainReducer = (state=initState, action) =>{
-    if(action.type==='CHANGE_COLOR'){
-        return {
-            ...state,
-            color: action.color
-        }
-    }
-    else{
-        return{
-            ...state
-        }
+    switch (action.type) {
+        case 'CHANGE_COLOR' : 
+            console.log("changed color");
+            return {
+                ...state,
+                color: action.color
+            }
+        case 'CHANGE_COLOR_ERROR' : 
+            console.log("change color had an error", action.err);
+            return state;
+        default: return state
     }
 }
 

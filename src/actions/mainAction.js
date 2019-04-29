@@ -5,8 +5,11 @@ export function loadColor(){
         return axios.get("http://www.colr.org/json/color/random").then((response)=>{
             dispatch(changeColor("#"+response.data.new_color))
         }).catch((err)=>{
-            console.log(err)
-        })
+                dispatch({
+                    type: 'CHANGE_COLOR_ERROR',
+                    err 
+                })
+            })
     }
 }
 
