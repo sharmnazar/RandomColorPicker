@@ -1,0 +1,27 @@
+.wrapper{
+    background: #fffafe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border-radius: 10px;
+    background: #5e505b;
+    margin: 1rem 10rem;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__button{
+        border-radius: 10px;
+        padding: 0.75rem;
+        background: lavenderblush;
+        color: black;
+        margin: 0.5rem;
+    }
+}
