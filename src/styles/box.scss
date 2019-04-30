@@ -9,13 +9,16 @@
 .box{
     border-radius: 10px;
     background: #5e505b;
-    margin: 1rem 10rem;
+    margin: .5rem;
     height: 300px;
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (min-width: 700px){
+        margin: 1rem 0.5rem;
+    } 
 
     &__button{
         border-radius: 10px;
@@ -25,3 +28,4 @@
         margin: 0.5rem;
     }
 }
+
