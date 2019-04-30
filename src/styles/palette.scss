@@ -1,11 +1,10 @@
 .palette{
     background: #ffffff;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     flex-wrap: wrap;
+    margin: 1rem 0;
     @media (min-width: 700px){
         flex-wrap: nowrap;
     }
