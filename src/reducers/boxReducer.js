@@ -10,9 +10,6 @@ const boxReducer = (state = initState, action) => {
                 ...state,
                 numOfBoxes: action.numOfBoxes
             }
-        case 'ADD_BOX_ERROR':
-            console.log("add box had an error", action.err);
-            return state
         default: return state
     }
 }
