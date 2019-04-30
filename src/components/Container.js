@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Box from "./Box"
 import { connect } from "react-redux";
 import * as actions from "../actions/mainAction"
-import "../styles/box.scss"
+import "../styles/container.scss"
 
 class Container extends Component {
 
