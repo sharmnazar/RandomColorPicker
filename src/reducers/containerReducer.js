@@ -2,7 +2,7 @@ let initState={
     color: '#5e505b',
 } 
 
-const mainReducer = (state=initState, action) =>{
+const containerReducer = (state=initState, action) =>{
     switch (action.type) {
         case 'CHANGE_COLOR' : 
             console.log("changed color");
@@ -17,4 +17,4 @@ const mainReducer = (state=initState, action) =>{
     }
 }
 
-export default mainReducer
+export default containerReducer
