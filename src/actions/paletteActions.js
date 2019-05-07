@@ -21,8 +21,12 @@ export function changePalette(palette){
 }
 
 export function addPalette(numOfPalettes){
-    return {
-        type: 'ADD_PALETTE',
+    return (dispatch) => {
+        dispatch(loadPalette()).then(()=>{
+            dispatch({
+                type: 'ADD_PALETTE',
         numOfPalettes: numOfPalettes+1
+            })
+        })
     }
 }

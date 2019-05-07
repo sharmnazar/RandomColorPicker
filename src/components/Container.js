@@ -10,7 +10,7 @@ class Container extends Component {
 
     let boxArray = [];
     for (let i = 0; i < this.props.box.numOfBoxes; i++) {
-      boxArray.push(<Box color={this.props.container.color} handleClick={this.props.loadColor} key={i + `${this.props.color}+`} />
+      boxArray.push(<Box color={this.props.box.color} handleClick={this.props.loadColor} key={i + `${this.props.box.color}+`} />
       );
     }
 

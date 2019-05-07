@@ -11,7 +11,7 @@ class PaletteContainer extends Component {
 
     let paletteArray = [];
     for (let i = 0; i < this.props.palette.numOfPalettes; i++) {
-        paletteArray.push(<Palette palette={this.props.paletteContainer.palette} handleClick={this.props.loadPalette} key={i + `${this.props.paletteContainer.palette[i]}+`} />
+        paletteArray.push(<Palette palette={this.props.palette.palette} handleClick={this.props.loadPalette} key={i + `${this.props.palette.palette[i]}+`} />
       );
     }
 
