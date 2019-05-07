@@ -8,25 +8,11 @@ class Container extends Component {
 
   render() {
 
-    let boxArray = [];
-    for (let i = 0; i < this.props.box.numOfBoxes; i++) {
-      boxArray.push(<Box color={this.props.container.color} handleClick={this.props.loadColor} key={i + `${this.props.color}+`} />
-      );
-    }
-
-    let addBoxes = (num) => {
-      num = this.props.box.numOfBoxes;
-      this.props.addBox(num)
-    }
-
     return (
       <div className="container">
         <div className="container__boxes">
-          {boxArray}
+        <Box color={this.props.container.color} handleClick={this.props.loadColor}/>
         </div>
-        <button className="container__button" onClick={addBoxes}>
-          Add Another Color Picker
-        </button>
       </div>
     )
   }

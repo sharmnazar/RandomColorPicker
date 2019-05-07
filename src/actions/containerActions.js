@@ -19,11 +19,3 @@ export function changeColor(color){
         color
     }
 }
-
-export function addBox(numOfBoxes){
-    return {
-        type: 'ADD_BOX',
-        numOfBoxes: numOfBoxes+1
-    }
-}
-

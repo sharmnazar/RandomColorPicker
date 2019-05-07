@@ -19,10 +19,3 @@ export function changePalette(palette){
         palette: palette.map(each=>"#"+each)
     }
 }
-
-export function addPalette(numOfPalettes){
-    return {
-        type: 'ADD_PALETTE',
-        numOfPalettes: numOfPalettes+1
-    }
-}
